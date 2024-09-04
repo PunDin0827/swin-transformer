@@ -65,7 +65,7 @@ def window_partition(x, window_size: int):
 
 def window_reverse(windows, window_size: int, H: int, W: int):
     """
-    将一个个window還原成一個feature map
+    將一個個window還原成一個feature map
     Args:
         windows: (num_windows*B, window_size, window_size, C)
         window_size (int): Window size(M)
