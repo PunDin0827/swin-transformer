@@ -65,14 +65,14 @@ def read_split_data(root: str, val_rate: float = 0.2):
         plt.bar(range(len(flower_class)), every_class_num, align='center')
         # 將橫坐標0,1,2,3,4替換為相應的類別名稱
         plt.xticks(range(len(flower_class)), flower_class)
-        # 在柱状圖上添加數值標籤
+        # 在柱狀圖上添加數值標籤
         for i, v in enumerate(every_class_num):
             plt.text(x=i, y=v + 5, s=str(v), ha='center')
         # 設置x坐標
         plt.xlabel('image class')
         # 設置y坐標
         plt.ylabel('number of images')
-        # 設置柱状圖的標題
+        # 設置柱狀圖的標題
         plt.title('flower class distribution')
         plt.show()
 
